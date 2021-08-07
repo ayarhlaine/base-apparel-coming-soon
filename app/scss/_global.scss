@@ -1,0 +1,19 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: $font-family;
+    font-size: $body-font-size;
+    font-weight: 400;
+    &.no_scroll {
+        overflow: hidden;
+    }
+}

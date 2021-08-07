@@ -1,0 +1,61 @@
+@media screen 
+  and (min-device-width: 412px) 
+  and (max-device-width: 1440px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body {
+    background-image: url(../../images/bg-pattern-desktop.svg);
+    }
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: row-reverse;
+        &__image__container{
+            flex: 1;
+            background-image: url(../../images/hero-desktop.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__text__container{
+            flex: 1.5;
+            padding: 6rem;
+        }
+        &__text__title {
+            text-transform: uppercase;
+            color: $desaturated-red;
+            font-weight: 300;
+            letter-spacing: 1rem;
+        }
+        &__text__first__sub__title, &__text__second__sub__title {
+            text-transform: uppercase;
+            color: $dark-grayish-red;
+            font-weight: 600;
+            letter-spacing: 1rem;
+        }
+        &__text__description {
+            color: $desaturated-red;
+        }
+        &__input {
+            border-radius: 20px;
+            border: 1px solid $desaturated-red;
+            padding: 0.3rem 1rem;
+            font-family: font-family;
+            outline-width: 0;
+        }
+        &__label {
+            position: relative;
+            span {
+                background-color: red;
+                background-image: url(../../images/icon-arrow.svg);
+            }
+        }
+        // &__label::before {
+        //     content: url(../../images/icon-arrow.svg);
+        //     position: absolute;
+        //     // right: -10px;
+        //     background-color: red;
+        //     border-radius: 20px;
+        //     width: 50px;
+        // }
+    }
+}
